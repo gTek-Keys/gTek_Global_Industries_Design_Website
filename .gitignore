@@ -1,6 +1,38 @@
-# dependencies
+
+# Node modules
 node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+
+# Build outputs
+/dist
+/.cache
+/public/pages/*.js
+
+# Environment
+.env
+
+# VS Code
 .vscode/
-.idea/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Wix system files
 .wix/
-jsconfig.json
+wix.lock
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Misc
+*.log
