@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gtekglobal.design Dice</title>
+  <style>
+    body {
+      background: #0f0f1f;
+      color: #00ffff;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 50px;
+    }
+    button {
+      background: #00ffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #0f0f1f;
+      border-radius: 6px;
+    }
+    #result {
+      font-size: 3rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎲 gtekglobal.design Dice Roller</h1>
+  <button onclick="rollDice()">Roll the Dice</button>
+  <div id="result">🎲</div>
+  <script>
+    function rollDice() {
+      const roll = Math.floor(Math.random() * 6) + 1;
+      document.getElementById('result').textContent = 'You rolled: ' + roll;
+    }
+  </script>
+</body>
+</html>
